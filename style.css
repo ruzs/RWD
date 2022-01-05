@@ -76,6 +76,12 @@
 }
 
 @media screen and (max-width: 800px) {
+  .sblock {
+    justify-content: center;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
   .b {
     width: 100%;
   }

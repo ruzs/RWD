@@ -1,0 +1,105 @@
+@charset "UTF-8";
+* {
+  font-family: 圓體-繁;
+  vertical-align: top;
+}
+
+.container {
+  font-size: 0;
+  text-align: center;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: inline-block;
+  font-size: 20px;
+  height: 200px;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+}
+.block p {
+  font-size: 15px;
+}
+.block .icon {
+  width: 30%;
+  min-width: 150px;
+}
+
+.sblock {
+  border: 2px solid #000;
+  display: inline-block;
+  width: 30%;
+}
+.sblock img {
+  width: 100%;
+  height: 200px;
+  background-color: #aaa;
+  min-width: 24px;
+}
+
+.a, .intro {
+  height: inherit;
+}
+
+.a, .g, .intro {
+  width: 100%;
+}
+
+.b {
+  width: 70%;
+}
+.b h4::after {
+  content: "(70%)";
+}
+
+.c, .f {
+  width: 30%;
+}
+.c h4::after, .f h4::after {
+  content: "(30%)";
+}
+
+.d, .e {
+  width: 35%;
+}
+.d h4::after, .e h4::after {
+  content: "(35%)";
+}
+
+.g h4::after {
+  content: "(100%)";
+}
+
+@media screen and (max-width: 800px) {
+  .b {
+    width: 100%;
+  }
+  .b h4::after {
+    content: "(100%)";
+  }
+
+  .c, .d, .e, .f {
+    width: 50%;
+  }
+  .c h4::after, .d h4::after, .e h4::after, .f h4::after {
+    content: "(50%)";
+  }
+}
+@media screen and (max-width: 400px) {
+  .b, .c, .d, .e, .f {
+    width: 100%;
+  }
+  .b h4::after, .c h4::after, .d h4::after, .e h4::after, .f h4::after {
+    content: "(100%)";
+  }
+
+  .sblock {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
